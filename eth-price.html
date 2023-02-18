@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ethereum Price</title>
+	<style>
+@font-face {
+    font-family: 'Octin Spraypaint';
+    src: url('octin.otf') format('opentype');
+}
+
+h1, p {
+    font-family: 'Octin Spraypaint', sans-serif;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+h1 {
+    font-size: 90px;
+}
+
+p {
+    font-size: 150px;
+    color: black;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.percentage-change {
+    font-family: 'Octin Spraypaint', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
+
+body {
+	
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.up {
+    background-image: url('up-background.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.down {
+    background-image: url('down-background.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+	</style>
+</head>
+<body>
+	<h1>ETH</h1>
+	<p class="price" id="price"></p>
+	<p class="percentage" id="percentage-change"></p>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="app.js"></script>
+</script>
+</body>
+</html>
